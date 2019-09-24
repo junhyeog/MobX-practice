@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import GetMarkList from '../components/GetMarkList.js'
-import AddMarkForm from '../components/AddMarkForm.js'
+import GetMarkList from '../components/GetMarkList'
+import AddMarkForm from '../components/AddMarkForm'
+import Counter from '../components/Counter'
 const Index = () => (
     <Fragment>
       <div className="gray-background">
@@ -8,6 +9,7 @@ const Index = () => (
       </div>
       <AddMarkForm />
       <GetMarkList />
+      <Counter />
     </Fragment>
   );
   

@@ -26,3 +26,9 @@ MobX
 
 ###### mobx-react-devtools
 - 실행 과정 디버깅
+
+- npm view mobx version
+    - mobx라는 모듈의 버전 확인
+- .babelrc
+    - decorator를 사용하기 위함
+

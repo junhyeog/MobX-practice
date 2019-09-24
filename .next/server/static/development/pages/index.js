@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -210,6 +210,82 @@ function AddMarkForm() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (AddMarkForm);
+
+/***/ }),
+
+/***/ "./components/Counter.js":
+/*!*******************************!*\
+  !*** ./components/Counter.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mobx */ "mobx");
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mobx__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx-react */ "mobx-react");
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(mobx_react__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\User\\Downloads\\MobX\\components\\Counter.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+class Counter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.number = 0;
+
+    this.increase = () => {
+      this.number++;
+    };
+
+    this.decrease = () => {
+      this.number--;
+    };
+  }
+
+  render() {
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, this.number), __jsx("button", {
+      onClick: this.increase,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, "+1"), __jsx("button", {
+      onClick: this.decrease,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, "-1"));
+  }
+
+}
+
+Object(mobx__WEBPACK_IMPORTED_MODULE_1__["decorate"])(Counter, {
+  number: mobx__WEBPACK_IMPORTED_MODULE_1__["observable"],
+  increase: mobx__WEBPACK_IMPORTED_MODULE_1__["action"],
+  decrease: mobx__WEBPACK_IMPORTED_MODULE_1__["action"]
+});
+/* harmony default export */ __webpack_exports__["default"] = (Object(mobx_react__WEBPACK_IMPORTED_MODULE_2__["observer"])(Counter));
 
 /***/ }),
 
@@ -539,10 +615,12 @@ function _objectSpread(target) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_GetMarkList_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/GetMarkList.js */ "./components/GetMarkList.js");
-/* harmony import */ var _components_AddMarkForm_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AddMarkForm.js */ "./components/AddMarkForm.js");
+/* harmony import */ var _components_GetMarkList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/GetMarkList */ "./components/GetMarkList.js");
+/* harmony import */ var _components_AddMarkForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AddMarkForm */ "./components/AddMarkForm.js");
+/* harmony import */ var _components_Counter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Counter */ "./components/Counter.js");
 var _jsxFileName = "C:\\Users\\User\\Downloads\\MobX\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -550,32 +628,38 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Index = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
+    lineNumber: 6
   },
   __self: undefined
 }, __jsx("div", {
   className: "gray-background",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 7
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 8
   },
   __self: undefined
-}, " Google-Marking-Map ")), __jsx(_components_AddMarkForm_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}), __jsx(_components_GetMarkList_js__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, " Google-Marking-Map ")), __jsx(_components_AddMarkForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
+  },
+  __self: undefined
+}), __jsx(_components_GetMarkList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}), __jsx(_components_Counter__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
   },
   __self: undefined
 }));
@@ -584,7 +668,7 @@ const Index = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -659,6 +743,28 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("google-map-react");
+
+/***/ }),
+
+/***/ "mobx":
+/*!***********************!*\
+  !*** external "mobx" ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("mobx");
+
+/***/ }),
+
+/***/ "mobx-react":
+/*!*****************************!*\
+  !*** external "mobx-react" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("mobx-react");
 
 /***/ }),
 
